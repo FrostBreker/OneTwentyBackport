@@ -1,4 +1,6 @@
 Start 02/01/23
 1.0 [02/01/23]:
-- Initial release
+- New:
+    -Items:
+        - Netherite Upgrade Smithing Template
 1.1:

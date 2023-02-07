@@ -1,6 +1,6 @@
 # The OneTwenty project is a backport of new version of Minecraft (1.20) on Minecraft 1.19.3.
 
-The OneTwenty project is a Minecraft mod in version 1.19.3 it gonna add every changes of Minecraft 1.20 dans Minecraft 1.19.3.
+The OneTwenty project is a Minecraft mod in version 1.19.3 it gonna add every changes of Minecraft 1.20 to Minecraft 1.19.3.
 
 ## 🏗️ /🚧\ In development /🚧\
 

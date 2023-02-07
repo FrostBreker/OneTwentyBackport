@@ -29,3 +29,5 @@ The OneTwenty project is a Minecraft mod in version 1.19.3 it gonna add every ch
 | Camel (Mob)     |⛔|
 | Raft (BoatEntity)     |⛔|
 | Sniffer (Mob)     |⛔|
+
+# If I have forgotten some items please let me know [here](https://github.com/FrostBreker/OneTwentyBackport-1.19.3/discussions/2)

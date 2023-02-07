@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x" : {
+      "model": "onetwenty:block/bamboo_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y" : {
+      "model": "onetwenty:block/bamboo_block"
+    },
+    "axis=z" : {
+      "model": "onetwenty:block/bamboo_block",
+      "x": 90
+    }
+  }
+}

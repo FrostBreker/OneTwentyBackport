@@ -27,15 +27,35 @@ The OneTwenty project is a Minecraft mod in version 1.19.3 it gonna add every ch
 | Bamboo Fence Gate     |✅|
 | Bamboo Trapdoor       |✅|
 | Bamboo Door           |✅|
+| Bamboo Sign           |⛔|
+| Bamboo Button         |⛔|
+| Bamboo pressure plate |⛔|
+| Bamboo Mosaic         |⛔|
+| Bamboo Mosaic Stairs  |⛔|
+| Bamboo Mosaic Slabs   |⛔|
 | Chiseled BookShelf    |⚠️|
 | Hanging Signs         |⛔|
+| Bamboo Mosaic         |⛔|
 
-## Misc
+## Advancements
 
-| Name      | Added? |
-| ----------- | ----------- |
-| Camel (Mob)     |⛔|
-| Sniffer (Mob)     |⛔|
-| Raft (BoatEntity)     |⛔|
+| Name                            | Added? |
+|---------------------------------| ----------- |
+| Two by Two                      |⛔|
+| Make the text of any sign glow  |⛔|
+
+## Mobs
+
+| Name  | Added? |
+|-------| -------- |
+| Camel |⛔|
+| Sniffer |⛔|
+
+## Entities
+
+| Name | Added? |
+|------| -------- |
+| Raft |⛔|
+
 
 # If I have forgotten some items please let me know [here](https://github.com/FrostBreker/OneTwentyBackport-1.19.3/discussions/2)

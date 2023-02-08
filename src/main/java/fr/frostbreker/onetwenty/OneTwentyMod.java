@@ -2,16 +2,11 @@ package fr.frostbreker.onetwenty;
 
 import fr.frostbreker.onetwenty.init.ModBlocks;
 import fr.frostbreker.onetwenty.init.ModItems;
+import fr.frostbreker.onetwenty.objects.blocks.ModBlockEntities;
 import fr.frostbreker.onetwenty.utils.Reference;
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.texture.TextureManager;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,6 +28,8 @@ public class OneTwentyMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
@@ -67,6 +64,15 @@ public class OneTwentyMod {
             event.accept(ModBlocks.BAMBOO_BLOCK);
             event.accept(ModBlocks.BAMBOO_PLANKS);
             event.accept(ModBlocks.STRIPPED_BAMBOO_BLOCK);
+            event.accept(ModBlocks.BAMBOO_SLAB);
+            event.accept(ModBlocks.BAMBOO_STAIRS);
+            event.accept(ModBlocks.BAMBOO_FENCE);
+            event.accept(ModBlocks.BAMBOO_FENCE_GATE);
+            event.accept(ModBlocks.BAMBOO_DOOR);
+            event.accept(ModBlocks.BAMBOO_TRAPDOOR);
+
+            event.accept(ModBlocks.CHISELED_BOOKSHELF);
+
         }
     }
 

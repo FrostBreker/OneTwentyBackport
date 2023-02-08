@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "onetwenty:bamboo_block",
+    "onetwenty:bamboo_door",
+    "onetwenty:bamboo_fence",
+    "onetwenty:bamboo_fence_gate",
+    "onetwenty:bamboo_planks",
+    "onetwenty:bamboo_slab",
+    "onetwenty:bamboo_stairs",
+    "onetwenty:bamboo_trapdoor",
+    "onetwenty:chiseled_bookshelf",
+    "onetwenty:stripped_bamboo_block"
+  ]
+}

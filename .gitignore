@@ -23,3 +23,10 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+
+build.gradle
+gradle.properties
+gradlew.bat
+gradlew
+settings.gradle
+/gradle

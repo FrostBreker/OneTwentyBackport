@@ -7,55 +7,56 @@ The OneTwenty project is a Minecraft mod in version 1.19.3 it gonna add every ch
 
 ## Items
 
-| Name      | Added? |
-| ----------- | ----------- |
-| Trim Smithing Templates      |✅|
-| Camel Spawn Egg   |⛔|
-| Piglin Head   |⛔|
-| Hanging Signs  |⛔|
+| Name                    | Added? |
+|-------------------------|--------|
+| Trim Smithing Templates | ✅      |
+| Camel Spawn Egg         | ⛔      |
+| Piglin Head             | ✅      |
 
 ## Blocks
 
 | Name                  | Added? |
-|-----------------------| ----------- |
-| Bamboo Block          |✅|
-| Stripped Bamboo Block |✅|
-| Bamboo Planks         |✅|
-| Bamboo Stairs         |✅|
-| Bamboo Slabs          |✅|
-| Bamboo Fence          |✅|
-| Bamboo Fence Gate     |✅|
-| Bamboo Trapdoor       |✅|
-| Bamboo Door           |✅|
-| Bamboo Sign           |⛔|
-| Bamboo Button         |⛔|
-| Bamboo pressure plate |⛔|
-| Bamboo Mosaic         |⛔|
-| Bamboo Mosaic Stairs  |⛔|
-| Bamboo Mosaic Slabs   |⛔|
-| Chiseled BookShelf    |⚠️|
-| Hanging Signs         |⛔|
-| Bamboo Mosaic         |⛔|
+|-----------------------|--------|
+| Bamboo Block          | ✅      |
+| Stripped Bamboo Block | ✅      |
+| Bamboo Planks         | ✅      |
+| Bamboo Stairs         | ✅      |
+| Bamboo Slabs          | ✅      |
+| Bamboo Fence          | ✅      |
+| Bamboo Fence Gate     | ✅      |
+| Bamboo Trapdoor       | ✅      |
+| Bamboo Door           | ✅      |
+| Bamboo Sign           | ⚠️     |
+| Bamboo Button         | ✅      |
+| Bamboo pressure plate | ✅      |
+| Bamboo Mosaic         | ✅      |
+| Bamboo Mosaic Stairs  | ✅      |
+| Bamboo Mosaic Slabs   | ✅      |
+| Chiseled BookShelf    | ✅      |
+| Bamboo Sapling        | ✅      |
+| Bamboo Hanging Signs  | ⚠️     |
+| Piglin Head           | ⚠️     |
 
 ## Advancements
 
-| Name                            | Added? |
-|---------------------------------| ----------- |
-| Two by Two                      |⛔|
-| Make the text of any sign glow  |⛔|
+| Name                           | Added? |
+|--------------------------------|--------|
+| Two by Two                     | ⛔      |
+| Make the text of any sign glow | ⛔      |
 
 ## Mobs
 
-| Name  | Added? |
-|-------| -------- |
-| Camel |⛔|
-| Sniffer |⛔|
+| Name    | Added? |
+|---------|--------|
+| Camel   | ⛔      |
+| Sniffer | ⛔      |
 
 ## Entities
 
-| Name | Added? |
-|------| -------- |
-| Raft |⛔|
+| Name            | Added? |
+|-----------------|--------|
+| Raft            | ⛔      |
+| Raft with Chest | ⛔      |
 
 
 # If I have forgotten some items please let me know [here](https://github.com/FrostBreker/OneTwentyBackport-1.19.3/discussions/2)

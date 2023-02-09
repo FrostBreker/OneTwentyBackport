@@ -1,6 +1,38 @@
 Start 02/01/23
-1.0 [02/01/23]:
+0.0.1 [02/01/23]:
 - New:
     -Items:
         - Netherite Upgrade Smithing Template
-1.1:
+
+0.1 [02/07/23]:
+-New:
+    - All trim smithing template item has been added
+    -Bamboo Block +
+    -Stripped Bamboo Block +
+    -Bamboo Planks +
+
+0.2 [02/08/23]:
+New:
+    | Bamboo Block          |✅|
+    | Stripped Bamboo Block |✅|
+    | Bamboo Planks         |✅|
+    | Bamboo Stairs         |✅|
+    | Bamboo Slabs          |✅|
+    | Bamboo Fence          |✅|
+    | Bamboo Fence Gate     |✅|
+    | Bamboo Trapdoor       |✅|
+    | Bamboo Door           |✅|
+    | Chiseled BookShelf    |⚠️|
+
+0.3 [02/08/23]:
+New:
+    | Bamboo Block          |✅|
+    | Stripped Bamboo Block |✅|
+    | Bamboo Planks         |✅|
+    | Bamboo Stairs         |✅|
+    | Bamboo Slabs          |✅|
+    | Bamboo Fence          |✅|
+    | Bamboo Fence Gate     |✅|
+    | Bamboo Trapdoor       |✅|
+    | Bamboo Door           |✅|
+    | Chiseled BookShelf    |⚠️|

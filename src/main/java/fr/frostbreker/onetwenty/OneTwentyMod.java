@@ -70,7 +70,6 @@ public class OneTwentyMod {
             event.accept(ModBlocks.BAMBOO_FENCE_GATE);
             event.accept(ModBlocks.BAMBOO_DOOR);
             event.accept(ModBlocks.BAMBOO_TRAPDOOR);
-            event.accept(ModBlocks.BAMBOO_PRESSURE_PLATE);
             event.accept(ModBlocks.BAMBOO_BUTTON);
             event.accept(ModBlocks.BAMBOO_MOSAIC);
             event.accept(ModBlocks.BAMBOO_MOSAIC_SLAB);
@@ -82,6 +81,8 @@ public class OneTwentyMod {
 
         if(event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS) {
             event.accept(ModBlocks.CHISELED_BOOKSHELF);
+            event.accept(ModBlocks.BAMBOO_PRESSURE_PLATE);
+
         }
 
 

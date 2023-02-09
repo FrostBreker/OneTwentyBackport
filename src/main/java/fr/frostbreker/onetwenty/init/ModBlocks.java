@@ -2,6 +2,7 @@ package fr.frostbreker.onetwenty.init;
 
 import fr.frostbreker.onetwenty.OneTwentyMod;
 import fr.frostbreker.onetwenty.objects.blocks.ModFlammableRotatedPillarBlock;
+import fr.frostbreker.onetwenty.objects.blocks.chiseledbookshelf.ChiseledBookShelfBlock2;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -26,7 +27,7 @@ import static net.minecraft.world.level.block.Blocks.BAMBOO;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, OneTwentyMod.MOD_ID);
 
-    public static final RegistryObject<Block> CHISELED_BOOKSHELF = registerBlock("chiseled_bookshelf", () -> new ChiseledBookShelfBlock(
+    public static final RegistryObject<Block> CHISELED_BOOKSHELF = registerBlock("chiseled_bookshelf", () -> new ChiseledBookShelfBlock2(
             BlockBehaviour.Properties.of(Material.WOOD).strength(1.5F).sound(SoundType.CHISELED_BOOKSHELF)));
 
     //Bamboo

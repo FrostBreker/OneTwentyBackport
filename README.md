@@ -11,8 +11,7 @@ The OneTwenty project is a Minecraft mod in version 1.19.3 it gonna add every ch
 |-------------------------|--------|
 | Trim Smithing Templates | ✅      |
 | Camel Spawn Egg         | ⛔      |
-| Piglin Head             | ✅      |
-
+| Sniffer Spawn Egg       | ⛔      |
 ## Blocks
 
 | Name                  | Added? |
@@ -58,5 +57,11 @@ The OneTwenty project is a Minecraft mod in version 1.19.3 it gonna add every ch
 | Raft            | ⛔      |
 | Raft with Chest | ⛔      |
 
+## Misc
+
+| Name                                  | Added? |
+|---------------------------------------|--------|
+| Customized Armor                      | ⛔      |
+| Smithing Template in structures chest | ⛔      |
 
 # If I have forgotten some items please let me know [here](https://github.com/FrostBreker/OneTwentyBackport-1.19.3/discussions/2)

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "onetwenty:bamboo_planks"
+    },
+    "E": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "E#E",
+    "E#E"
+  ],
+  "result": {
+    "item": "onetwenty:bamboo_fence_gate",
+    "count": 2
+  }
+}

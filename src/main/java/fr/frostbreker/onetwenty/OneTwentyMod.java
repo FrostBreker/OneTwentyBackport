@@ -1,14 +1,19 @@
 package fr.frostbreker.onetwenty;
 
+import fr.frostbreker.onetwenty.entity.ModEntityTypes;
+import fr.frostbreker.onetwenty.entity.custom.camel.CamelRenderer;
 import fr.frostbreker.onetwenty.init.ModBlocks;
 import fr.frostbreker.onetwenty.init.ModItems;
 import fr.frostbreker.onetwenty.objects.blocks.ModBlockEntities;
 import fr.frostbreker.onetwenty.utils.Reference;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.entity.animal.camel.Camel;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -30,6 +35,8 @@ public class OneTwentyMod {
         ModBlocks.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
+
+        ModEntityTypes.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
@@ -98,5 +105,15 @@ public class OneTwentyMod {
 
         }
 
+        @SubscribeEvent
+        public static void entityAttributes(EntityAttributeCreationEvent event) {
+            event.put(ModEntityTypes.CAMEL.get(), Camel.createAttributes().build());
+        }
+
+        @SubscribeEvent
+        public static void entityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+            //Register Entity Renderers
+            event.registerEntityRenderer(ModEntityTypes.CAMEL.get(), CamelRenderer::new);
+        }
     }
 }

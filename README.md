@@ -54,8 +54,8 @@ The OneTwenty project is a Minecraft mod in version 1.19.3 it gonna add every ch
 
 | Name            | Added? |
 |-----------------|--------|
-| Raft            | ⛔      |
-| Raft with Chest | ⛔      |
+| Raft            | ✅      |
+| Raft with Chest | ✅      |
 
 ## Misc
 

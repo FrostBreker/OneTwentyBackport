@@ -1,6 +1,10 @@
 package fr.frostbreker.onetwenty.init;
 
+import fr.frostbreker.onetwenty.entity.ModEntityTypes;
 import fr.frostbreker.onetwenty.utils.Reference;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +26,10 @@ public class ModItems {
    public static final RegistryObject<Item> VEX_ARMOR_TRIM_SMITHING_TEMPLATE = ITEMS.register("vex_armor_trim_smithing_template", () -> new Item(new Item.Properties()));
    public static final RegistryObject<Item> WARD_ARMOR_TRIM_SMITHING_TEMPLATE = ITEMS.register("ward_armor_trim_smithing_template", () -> new Item(new Item.Properties()));
    public static final RegistryObject<Item> WILD_ARMOR_TRIM_SMITHING_TEMPLATE = ITEMS.register("wild_armor_trim_smithing_template", () -> new Item(new Item.Properties()));
+   public static final RegistryObject<Item> BAMBOO_RAFT = ITEMS.register("bamboo_raft", () -> new BoatItem(false, Boat.Type.BAMBOO, (new Item.Properties()).stacksTo(1)));
+   public static final RegistryObject<Item> BAMBOO_CHEST_RAFT = ITEMS.register("bamboo_chest_raft", () -> new BoatItem(true, Boat.Type.BAMBOO, (new Item.Properties()).stacksTo(1)));
+   //public static final RegistryObject<Item> CAMEL_SPAWN_EGG = ITEMS.register("camel_spawn_egg", () -> new SpawnEggItem(ModEntityTypes.CAMEL.get(), 16565097, 13341495, new Item.Properties()));
+
 
    public static void register(IEventBus eventBus) {
       ITEMS.register(eventBus);

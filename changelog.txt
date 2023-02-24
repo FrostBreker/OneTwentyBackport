@@ -80,3 +80,8 @@ New:
 
     Add Trim in lootables
     Add tree generator
+
+0.4.1 [02/24/23]:
+
+    Add Translation for Cherry
+    Change Sapling to Natural block in creative tabs

@@ -104,7 +104,6 @@ public class OneTwentyMod {
             event.accept(ModBlocks.CHERRY_DOOR);
             event.accept(ModBlocks.CHERRY_TRAPDOOR);
             event.accept(ModBlocks.CHERRY_LEAVES);
-            event.accept(ModBlocks.CHERRY_SAPLING);
             event.accept(ModBlocks.CHERRY_BUTTON);
             event.accept(ModBlocks.CHERRY_PRESSURE_PLATE);
             event.accept(ModBlocks.CHERRY_SIGN);
@@ -125,6 +124,11 @@ public class OneTwentyMod {
         if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModItems.BAMBOO_CHEST_RAFT);
             event.accept(ModItems.BAMBOO_RAFT);
+        }
+
+        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.CHERRY_LEAVES);
+            event.accept(ModBlocks.CHERRY_SAPLING);
         }
     }
 

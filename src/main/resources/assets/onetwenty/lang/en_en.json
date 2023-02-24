@@ -29,5 +29,23 @@
   "block.onetwenty.bamboo_mosaic": "Bamboo Mosaic",
   "block.onetwenty.bamboo_mosaic_stairs": "Bamboo Mosaic Stairs",
   "block.onetwenty.bamboo_mosaic_slab": "Bamboo Mosaic Slab",
-  "block.onetwenty.piglin_head": "Piglin Head"
+  "block.onetwenty.piglin_head": "Piglin Head",
+
+  "block.onetwenty.cherry_log": "Cherry Log",
+  "block.onetwenty.cherry_wood": "Cherry Wood",
+  "block.onetwenty.stripped_cherry_log": "Stripped Cherry Log",
+  "block.onetwenty.stripped_cherry_wood": "Stripped Cherry Wood",
+  "block.onetwenty.cherry_planks": "Cherry Planks",
+  "block.onetwenty.cherry_stairs": "Cherry Stairs",
+  "block.onetwenty.cherry_slab": "Cherry Slab",
+  "block.onetwenty.cherry_fence": "Cherry Fence",
+  "block.onetwenty.cherry_fence_gate": "Cherry Fence Gate",
+  "block.onetwenty.cherry_door": "Cherry Door",
+  "block.onetwenty.cherry_trapdoor": "Cherry Trapdoor",
+  "block.onetwenty.cherry_pressure_plate": "Cherry Pressure Plate",
+  "block.onetwenty.cherry_button": "Cherry Button",
+  "block.onetwenty.cherry_sign": "Cherry Sign",
+  "block.onetwenty.cherry_hanging_sign": "Cherry Hanging Sign",
+  "block.onetwenty.cherry_leaves": "Cherry Leaves",
+  "block.onetwenty.cherry_sapling": "Cherry Sapling"
 }

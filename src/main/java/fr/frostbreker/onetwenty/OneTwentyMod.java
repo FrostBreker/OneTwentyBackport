@@ -1,19 +1,25 @@
 package fr.frostbreker.onetwenty;
 
+import fr.frostbreker.onetwenty.datagen.*;
 import fr.frostbreker.onetwenty.entity.ModEntityTypes;
-import fr.frostbreker.onetwenty.entity.custom.camel.CamelRenderer;
 import fr.frostbreker.onetwenty.init.ModBlocks;
 import fr.frostbreker.onetwenty.init.ModItems;
 import fr.frostbreker.onetwenty.objects.blocks.ModBlockEntities;
+import fr.frostbreker.onetwenty.screen.ModMenuTypes;
 import fr.frostbreker.onetwenty.utils.Reference;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.entity.animal.camel.Camel;
+import fr.frostbreker.onetwenty.world.ModConfiguredFeatures;
+import fr.frostbreker.onetwenty.world.ModPlacedFeatures;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.CreativeModeTabEvent;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -22,19 +28,21 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+import java.util.concurrent.CompletableFuture;
+
 @Mod(Reference.MODID)
 public class OneTwentyMod {
     public static final String MOD_ID = Reference.MODID;
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public OneTwentyMod()
-    {
+    public OneTwentyMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         ModEntityTypes.register(modEventBus);
 
@@ -45,8 +53,7 @@ public class OneTwentyMod {
         modEventBus.addListener(this::addCreative);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
+    private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
 
@@ -77,43 +84,58 @@ public class OneTwentyMod {
             event.accept(ModBlocks.BAMBOO_FENCE_GATE);
             event.accept(ModBlocks.BAMBOO_DOOR);
             event.accept(ModBlocks.BAMBOO_TRAPDOOR);
-            event.accept(ModBlocks.BAMBOO_BUTTON);
             event.accept(ModBlocks.BAMBOO_MOSAIC);
             event.accept(ModBlocks.BAMBOO_MOSAIC_SLAB);
             event.accept(ModBlocks.BAMBOO_MOSAIC_STAIRS);
 
 
             event.accept(ModBlocks.CHISELED_BOOKSHELF);
+
+            //Cherry
+            event.accept(ModBlocks.CHERRY_LOG);
+            event.accept(ModBlocks.STRIPPED_CHERRY_LOG);
+            event.accept(ModBlocks.CHERRY_WOOD);
+            event.accept(ModBlocks.STRIPPED_CHERRY_WOOD);
+            event.accept(ModBlocks.CHERRY_PLANKS);
+            event.accept(ModBlocks.CHERRY_SLAB);
+            event.accept(ModBlocks.CHERRY_STAIRS);
+            event.accept(ModBlocks.CHERRY_FENCE);
+            event.accept(ModBlocks.CHERRY_FENCE_GATE);
+            event.accept(ModBlocks.CHERRY_DOOR);
+            event.accept(ModBlocks.CHERRY_TRAPDOOR);
+            event.accept(ModBlocks.CHERRY_LEAVES);
+            event.accept(ModBlocks.CHERRY_SAPLING);
+            event.accept(ModBlocks.CHERRY_BUTTON);
+            event.accept(ModBlocks.CHERRY_PRESSURE_PLATE);
+            event.accept(ModBlocks.CHERRY_SIGN);
+            event.accept(ModBlocks.CHERRY_HANGING_SIGN);
+
+
+
+
         }
 
         if(event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS) {
             event.accept(ModBlocks.CHISELED_BOOKSHELF);
             event.accept(ModBlocks.BAMBOO_PRESSURE_PLATE);
-
+            event.accept(ModBlocks.BAMBOO_BUTTON);
         }
 
-
+        //add raft boat
+        if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModItems.BAMBOO_CHEST_RAFT);
+            event.accept(ModItems.BAMBOO_RAFT);
+        }
     }
+
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
-        }
+    public static class ClientModEvents {
 
         @SubscribeEvent
-        public static void entityAttributes(EntityAttributeCreationEvent event) {
-            event.put(ModEntityTypes.CAMEL.get(), Camel.createAttributes().build());
-        }
+        public static void onClientSetup(FMLClientSetupEvent event) {
 
-        @SubscribeEvent
-        public static void entityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-            //Register Entity Renderers
-            event.registerEntityRenderer(ModEntityTypes.CAMEL.get(), CamelRenderer::new);
         }
     }
 }

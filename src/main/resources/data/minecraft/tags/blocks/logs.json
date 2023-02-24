@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#onetwenty:bamboo_block"
+    "#onetwenty:bamboo_block",
+    "#onetwenty:cherry_log"
   ]
 }

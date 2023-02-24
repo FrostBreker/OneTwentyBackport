@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "onetwenty:block/cherry_planks"
+  }
+}

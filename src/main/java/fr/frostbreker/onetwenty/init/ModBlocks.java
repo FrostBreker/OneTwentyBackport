@@ -3,6 +3,7 @@ package fr.frostbreker.onetwenty.init;
 import fr.frostbreker.onetwenty.OneTwentyMod;
 import fr.frostbreker.onetwenty.objects.blocks.ModFlammableRotatedPillarBlock;
 import fr.frostbreker.onetwenty.objects.blocks.chiseledbookshelf.ChiseledBookShelfBlock2;
+import fr.frostbreker.onetwenty.world.tree.CherryTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -45,12 +46,12 @@ public class ModBlocks {
 
         @Override
         public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 20;
+            return 5;
         }
 
         @Override
         public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 5;
+            return 20;
         }
     });
 
@@ -63,12 +64,12 @@ public class ModBlocks {
 
         @Override
         public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 20;
+            return 5;
         }
 
         @Override
         public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 5;
+            return 20;
         }
     });
 
@@ -82,12 +83,12 @@ public class ModBlocks {
 
         @Override
         public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 20;
+            return 5;
         }
 
         @Override
         public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 5;
+            return 20;
         }
     });
 
@@ -100,12 +101,12 @@ public class ModBlocks {
 
         @Override
         public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 20;
+            return 5;
         }
 
         @Override
         public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 5;
+            return 20;
         }
     });
 
@@ -118,12 +119,12 @@ public class ModBlocks {
 
         @Override
         public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 20;
+            return 5;
         }
 
         @Override
         public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 5;
+            return 20;
         }
     });
     public static final RegistryObject<Block> BAMBOO_DOOR = registerBlock("bamboo_door", () -> new DoorBlock(
@@ -135,12 +136,12 @@ public class ModBlocks {
 
         @Override
         public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 20;
+            return 5;
         }
 
         @Override
         public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 5;
+            return 20;
         }
 
     });
@@ -154,12 +155,12 @@ public class ModBlocks {
 
         @Override
         public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 20;
+            return 5;
         }
 
         @Override
         public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-            return 5;
+            return 20;
         }
     });
 
@@ -225,13 +226,223 @@ public class ModBlocks {
             BAMBOO,
             BlockBehaviour.Properties.of(Material.DECORATION).
                     instabreak().
-                    noOcclusion()));
-
-
+                    noOcclusion()
+    ));
 
     public static final RegistryObject<Block> PIGLIN_HEAD = registerBlock("piglin_head", () -> new SkullBlock(
-            SkullBlock.Types.PIGLIN, BlockBehaviour.Properties.of(Material.DECORATION).strength(1.0F)));
+            SkullBlock.Types.PIGLIN, BlockBehaviour.Properties.of(Material.DECORATION).strength(1.0F)
+    ));
 
+    //Cherry
+
+    public static final RegistryObject<Block> CHERRY_LOG = registerBlock("cherry_log", () -> new ModFlammableRotatedPillarBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> CHERRY_WOOD = registerBlock("cherry_wood", () -> new ModFlammableRotatedPillarBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> STRIPPED_CHERRY_LOG = registerBlock("stripped_cherry_log", () -> new ModFlammableRotatedPillarBlock(
+            BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> STRIPPED_CHERRY_WOOD = registerBlock("stripped_cherry_wood", () -> new ModFlammableRotatedPillarBlock(
+            BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> CHERRY_LEAVES = registerBlock("cherry_leaves", () -> new LeavesBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.GRASS)) {
+        @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 30;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 60;
+        }
+    });
+
+    public static final RegistryObject<Block> CHERRY_PLANKS = registerBlock("cherry_planks", () -> new Block(
+            BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD)) {
+        @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 20;
+        }
+
+    });
+
+    public static final RegistryObject<Block> CHERRY_SLAB = registerBlock("cherry_slab", () -> new SlabBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)) {
+        @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 20;
+        }
+    });
+
+    public static final RegistryObject<Block> CHERRY_STAIRS = registerBlock("cherry_stairs", () -> new StairBlock(
+            () -> CHERRY_PLANKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)) {
+        @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 20;
+        }
+    });
+
+    public static final RegistryObject<Block> CHERRY_FENCE = registerBlock("cherry_fence", () -> new FenceBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)) {
+        @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 20;
+        }
+    });
+
+    public static final RegistryObject<Block> CHERRY_FENCE_GATE = registerBlock("cherry_fence_gate", () -> new FenceGateBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE) {
+       @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 20;
+        }
+    });
+    public static final RegistryObject<Block> CHERRY_DOOR = registerBlock("cherry_door", () -> new DoorBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).sound(SoundType.WOOD), SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_DOOR_CLOSE) {
+       @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 20;
+        }
+
+    });
+
+    public static final RegistryObject<Block> CHERRY_TRAPDOOR = registerBlock("cherry_trapdoor", () -> new TrapDoorBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).sound(SoundType.WOOD), SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundEvents.WOODEN_TRAPDOOR_CLOSE) {
+       @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 20;
+        }
+    });
+
+    public static final RegistryObject<Block> CHERRY_SIGN = registerBlock("cherry_sign", () -> new StandingSignBlock(
+            BlockBehaviour.Properties.of(Material.WOOD, CHERRY_PLANKS.get().defaultMaterialColor())
+                    .noCollission().strength(1.0F)
+                    .sound(SoundType.WOOD), WoodType.OAK));
+
+    public static final RegistryObject<Block> CHERRY_WALL_SIGN = registerBlock("cherry_wall_sign", () -> new WallSignBlock(
+            BlockBehaviour.Properties.of(Material.WOOD, CHERRY_PLANKS.get().defaultMaterialColor())
+                    .noCollission()
+                    .strength(1.0F)
+                    .sound(SoundType.WOOD)
+                    .dropsLike(CHERRY_SIGN.get()), WoodType.OAK));
+    public static final RegistryObject<Block> CHERRY_HANGING_SIGN = registerBlock("cherry_hanging_sign", () -> new CeilingHangingSignBlock(
+            BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PINK)
+                    .noCollission().strength(1.0F)
+                    .sound(SoundType.HANGING_SIGN), WoodType.OAK));
+
+    public static final RegistryObject<Block> CHERRY_WALL_HANGING_SIGN = registerBlock("cherry_wall_hanging_sign", () -> new WallHangingSignBlock(
+            BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PINK)
+                    .noCollission().strength(1.0F)
+                    .sound(SoundType.HANGING_SIGN)
+                    .dropsLike(CHERRY_HANGING_SIGN.get()), WoodType.OAK));
+
+    public static final RegistryObject<Block> CHERRY_PRESSURE_PLATE = registerBlock("cherry_pressure_plate", () -> new PressurePlateBlock(
+            PressurePlateBlock.Sensitivity.EVERYTHING,
+            BlockBehaviour.Properties.of(Material.WOOD, CHERRY_PLANKS.get().defaultMaterialColor())
+                    .noCollission().strength(0.5F).sound(SoundType.WOOD),
+            SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_OFF,
+            SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON));
+
+    public static final RegistryObject<Block> CHERRY_BUTTON = registerBlock("cherry_button", () -> new ButtonBlock(
+            BlockBehaviour.Properties.of(Material.DECORATION)
+                    .noCollission().strength(0.5F)
+                    .sound(SoundType.WOOD),
+            30,
+            true,
+            SoundEvents.WOODEN_BUTTON_CLICK_OFF,
+            SoundEvents.WOODEN_BUTTON_CLICK_ON));
+
+    public static final RegistryObject<Block> CHERRY_SAPLING = registerBlock("cherry_sapling", () -> new SaplingBlock(
+            new CherryTreeGrower(),
+            BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+                    .randomTicks().instabreak().noCollission()
+                    .strength(1.0F).sound(SoundType.BAMBOO_SAPLING)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)));
+
+    public static final RegistryObject<Block> POTTED_CHERRY = registerBlock("potted_cherry", () -> new FlowerPotBlock(
+            CHERRY_SAPLING.get(),
+            BlockBehaviour.Properties.of(Material.DECORATION).
+                    instabreak().
+                    noOcclusion()
+    ));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> registryObject = BLOCKS.register(name, block);

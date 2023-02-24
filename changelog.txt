@@ -41,3 +41,42 @@ New:
 New:
     Added translated version of the mod
     Added recipe for all blocks
+
+0.3.3 [02/10/23]:
+New:
+    Add Raft
+    Add Raft with Chest
+
+0.3.4 [02/12/23]:
+New:
+    Add Raft in Creative Tab
+    Add Raft with Chest in Creative Tab
+
+0.4 [02/24/23]:
+New:
+    | CHERRY UPDATE (V0.4)  | 🆕     |
+    | Cherry Log            | ✅      |
+    | Stripped Cherry Log   | ✅      |
+    | Cherry Wood           | ✅      |
+    | Stripped Cherry Wood  | ✅      |
+    | Cherry Planks         | ✅      |
+    | Cherry Stairs         | ✅      |
+    | Cherry Slabs          | ✅      |
+    | Cherry Fence          | ✅      |
+    | Cherry Fence Gate     | ✅      |
+    | Cherry Trapdoor       | ✅      |
+    | Cherry Door           | ✅      |
+    | Cherry Leaves         | ✅      |
+    | Cherry Sapling        | ✅      |
+    | Cherry Button         | ✅      |
+    | Cherry Pressure Plate | ✅      |
+    | Cherry Sign           | ⚠️     |
+    | Cherry Hanging Sign   | ⚠️     |
+    | Cherry Boat            | ⛔    |
+    | Cherry Boat with Chest | ⛔     |
+    Add in Lootables
+    Add in Creative Tab
+    Add Recipe for all blocks
+
+    Add Trim in lootables
+    Add tree generator

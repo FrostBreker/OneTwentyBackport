@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "onetwenty:block/cherry_sapling"
+  }
+}

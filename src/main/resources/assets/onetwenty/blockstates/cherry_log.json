@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "onetwenty:block/cherry_log_x"
+    },
+    "axis=y": {
+      "model": "onetwenty:block/cherry_log_y"
+    },
+    "axis=z": {
+      "model": "onetwenty:block/cherry_log_z"
+    }
+  }
+}

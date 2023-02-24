@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 19
+        },
+        {
+          "type": "minecraft:item",
+          "name": "onetwenty:ward_armor_trim_smithing_template"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

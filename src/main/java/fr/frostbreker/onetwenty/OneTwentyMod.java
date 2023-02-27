@@ -1,24 +1,20 @@
 package fr.frostbreker.onetwenty;
 
-import fr.frostbreker.onetwenty.datagen.*;
 import fr.frostbreker.onetwenty.entity.ModEntityTypes;
 import fr.frostbreker.onetwenty.init.ModBlocks;
 import fr.frostbreker.onetwenty.init.ModItems;
 import fr.frostbreker.onetwenty.objects.blocks.ModBlockEntities;
+import fr.frostbreker.onetwenty.objects.blocks.ModWoodTypes;
 import fr.frostbreker.onetwenty.screen.ModMenuTypes;
 import fr.frostbreker.onetwenty.utils.Reference;
 import com.mojang.logging.LogUtils;
-import fr.frostbreker.onetwenty.world.ModConfiguredFeatures;
-import fr.frostbreker.onetwenty.world.ModPlacedFeatures;
-import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.PackOutput;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -27,8 +23,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-
-import java.util.concurrent.CompletableFuture;
 
 @Mod(Reference.MODID)
 public class OneTwentyMod {
@@ -46,7 +40,6 @@ public class OneTwentyMod {
 
         ModEntityTypes.register(modEventBus);
 
-
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -54,7 +47,9 @@ public class OneTwentyMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            Sheets.addWoodType(ModWoodTypes.CHERRY);
+        });
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
@@ -106,12 +101,8 @@ public class OneTwentyMod {
             event.accept(ModBlocks.CHERRY_LEAVES);
             event.accept(ModBlocks.CHERRY_BUTTON);
             event.accept(ModBlocks.CHERRY_PRESSURE_PLATE);
-            event.accept(ModBlocks.CHERRY_SIGN);
-            event.accept(ModBlocks.CHERRY_HANGING_SIGN);
-
-
-
-
+            event.accept(ModItems.CHERRY_SIGN);
+            event.accept(ModItems.BAMBOO_SIGN);
         }
 
         if(event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS) {
@@ -139,7 +130,9 @@ public class OneTwentyMod {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            WoodType.register(ModWoodTypes.CHERRY);
+            BlockEntityRenderers.register(ModBlockEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
+            //BlockEntityRenderers.register(ModBlockEntities.HANGING_SIGN_BLOCK_ENTITIES.get(), HangingSignRenderer::new);
         }
     }
 }

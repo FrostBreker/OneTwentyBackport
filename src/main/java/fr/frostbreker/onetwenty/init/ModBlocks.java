@@ -2,7 +2,12 @@ package fr.frostbreker.onetwenty.init;
 
 import fr.frostbreker.onetwenty.OneTwentyMod;
 import fr.frostbreker.onetwenty.objects.blocks.ModFlammableRotatedPillarBlock;
-import fr.frostbreker.onetwenty.objects.blocks.chiseledbookshelf.ChiseledBookShelfBlock2;
+import fr.frostbreker.onetwenty.objects.blocks.ModWoodTypes;
+import fr.frostbreker.onetwenty.objects.blocks.custom.signs.ModCeilingHangingSignBlock;
+import fr.frostbreker.onetwenty.objects.blocks.custom.signs.ModStandingSignBlock;
+import fr.frostbreker.onetwenty.objects.blocks.custom.signs.ModWallHangingSignBlock;
+import fr.frostbreker.onetwenty.objects.blocks.custom.signs.ModWallSignBlock;
+import fr.frostbreker.onetwenty.objects.blocks.custom.chiseledbookshelf.ChiseledBookShelfBlock2;
 import fr.frostbreker.onetwenty.world.tree.CherryTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -164,27 +169,6 @@ public class ModBlocks {
         }
     });
 
-    public static final RegistryObject<Block> BAMBOO_SIGN = registerBlock("bamboo_sign", () -> new StandingSignBlock(
-            BlockBehaviour.Properties.of(Material.WOOD, BAMBOO_PLANKS.get().defaultMaterialColor())
-                    .noCollission().strength(1.0F)
-                    .sound(SoundType.BAMBOO_WOOD), WoodType.BAMBOO));
-
-    public static final RegistryObject<Block> BAMBOO_WALL_SIGN = registerBlock("bamboo_wall_sign", () -> new WallSignBlock(
-            BlockBehaviour.Properties.of(Material.WOOD, BAMBOO_PLANKS.get().defaultMaterialColor())
-                    .noCollission()
-                    .strength(1.0F)
-                    .sound(SoundType.BAMBOO_WOOD)
-                    .dropsLike(BAMBOO_SIGN.get()), WoodType.BAMBOO));
-    public static final RegistryObject<Block> BAMBOO_HANGING_SIGN = registerBlock("bamboo_hanging_sign", () -> new CeilingHangingSignBlock(
-            BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_YELLOW)
-                    .noCollission().strength(1.0F)
-                    .sound(SoundType.BAMBOO_WOOD_HANGING_SIGN), WoodType.BAMBOO));
-
-    public static final RegistryObject<Block> BAMBOO_WALL_HANGING_SIGN = registerBlock("bamboo_wall_hanging_sign", () -> new WallHangingSignBlock(
-            BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_YELLOW)
-                    .noCollission().strength(1.0F)
-                    .sound(SoundType.BAMBOO_WOOD_HANGING_SIGN)
-                    .dropsLike(BAMBOO_HANGING_SIGN.get()), WoodType.BAMBOO));
 
     public static final RegistryObject<Block> BAMBOO_PRESSURE_PLATE = registerBlock("bamboo_pressure_plate", () -> new PressurePlateBlock(
             PressurePlateBlock.Sensitivity.EVERYTHING,
@@ -392,28 +376,6 @@ public class ModBlocks {
         }
     });
 
-    public static final RegistryObject<Block> CHERRY_SIGN = registerBlock("cherry_sign", () -> new StandingSignBlock(
-            BlockBehaviour.Properties.of(Material.WOOD, CHERRY_PLANKS.get().defaultMaterialColor())
-                    .noCollission().strength(1.0F)
-                    .sound(SoundType.WOOD), WoodType.OAK));
-
-    public static final RegistryObject<Block> CHERRY_WALL_SIGN = registerBlock("cherry_wall_sign", () -> new WallSignBlock(
-            BlockBehaviour.Properties.of(Material.WOOD, CHERRY_PLANKS.get().defaultMaterialColor())
-                    .noCollission()
-                    .strength(1.0F)
-                    .sound(SoundType.WOOD)
-                    .dropsLike(CHERRY_SIGN.get()), WoodType.OAK));
-    public static final RegistryObject<Block> CHERRY_HANGING_SIGN = registerBlock("cherry_hanging_sign", () -> new CeilingHangingSignBlock(
-            BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PINK)
-                    .noCollission().strength(1.0F)
-                    .sound(SoundType.HANGING_SIGN), WoodType.OAK));
-
-    public static final RegistryObject<Block> CHERRY_WALL_HANGING_SIGN = registerBlock("cherry_wall_hanging_sign", () -> new WallHangingSignBlock(
-            BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PINK)
-                    .noCollission().strength(1.0F)
-                    .sound(SoundType.HANGING_SIGN)
-                    .dropsLike(CHERRY_HANGING_SIGN.get()), WoodType.OAK));
-
     public static final RegistryObject<Block> CHERRY_PRESSURE_PLATE = registerBlock("cherry_pressure_plate", () -> new PressurePlateBlock(
             PressurePlateBlock.Sensitivity.EVERYTHING,
             BlockBehaviour.Properties.of(Material.WOOD, CHERRY_PLANKS.get().defaultMaterialColor())
@@ -437,12 +399,54 @@ public class ModBlocks {
                     .strength(1.0F).sound(SoundType.BAMBOO_SAPLING)
                     .offsetType(BlockBehaviour.OffsetType.XZ)));
 
-    public static final RegistryObject<Block> POTTED_CHERRY = registerBlock("potted_cherry", () -> new FlowerPotBlock(
+    public static final RegistryObject<Block> POTTED_CHERRY = registerBlockWithoutBlockItem("potted_cherry", () -> new FlowerPotBlock(
             CHERRY_SAPLING.get(),
             BlockBehaviour.Properties.of(Material.DECORATION).
                     instabreak().
                     noOcclusion()
     ));
+
+
+    //Signs and Hanging Signs
+
+    //Signs
+    public static final RegistryObject<Block> BAMBOO_WALL_SIGN = registerBlockWithoutBlockItem("bamboo_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodType.BAMBOO));
+
+    public static final RegistryObject<Block> BAMBOO_SIGN = registerBlockWithoutBlockItem("bamboo_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodType.BAMBOO));
+
+    public static final RegistryObject<Block> CHERRY_WALL_SIGN = registerBlockWithoutBlockItem("cherry_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CHERRY));
+
+    public static final RegistryObject<Block> CHERRY_SIGN = registerBlockWithoutBlockItem("cherry_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CHERRY));
+
+
+    //Hanging Signs
+
+   /* public static final RegistryObject<Block> CHERRY_HANGING_SIGN = registerBlockWithoutBlockItem("cherry_hanging_sign",
+            () -> new ModCeilingHangingSignBlock(BlockBehaviour.Properties.of(Material.WOOD,
+                            CHERRY_LOG.get().defaultMaterialColor())
+                    .noCollission()
+                    .strength(1.0F)
+                    .sound(SoundType.HANGING_SIGN), ModWoodTypes.CHERRY));
+
+    public static final RegistryObject<Block> CHERRY_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("cherry_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.of(
+                    Material.WOOD,
+                    CHERRY_LOG.get().defaultMaterialColor())
+                    .noCollission()
+                    .strength(1.0F)
+                    .sound(SoundType.HANGING_SIGN)
+                    .dropsLike(CHERRY_HANGING_SIGN.get()), ModWoodTypes.CHERRY)); */
+
+
+
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> registryObject = BLOCKS.register(name, block);

@@ -12,6 +12,7 @@ The OneTwenty project is a Minecraft mod, it gonna add every changes of Minecraf
 | Trim Smithing Templates | ✅      |
 | Camel Spawn Egg         | ⛔      |
 | Sniffer Spawn Egg       | ⛔      |
+
 ## Blocks
 
 | Name                  | Added? |
@@ -26,7 +27,6 @@ The OneTwenty project is a Minecraft mod, it gonna add every changes of Minecraf
 | Bamboo Fence Gate     | ✅      |
 | Bamboo Trapdoor       | ✅      |
 | Bamboo Door           | ✅      |
-| Bamboo Sign           | ⚠️     |
 | Bamboo Button         | ✅      |
 | Bamboo pressure plate | ✅      |
 | Bamboo Mosaic         | ✅      |
@@ -34,7 +34,6 @@ The OneTwenty project is a Minecraft mod, it gonna add every changes of Minecraf
 | Bamboo Mosaic Slabs   | ✅      |
 | Chiseled BookShelf    | ✅      |
 | Bamboo Sapling        | ✅      |
-| Bamboo Hanging Signs  | ⚠️     |
 | Piglin Head           | ⚠️     |
 | CHERRY UPDATE (V0.4)  | 🆕     |
 | Cherry Log            | ✅      |
@@ -52,8 +51,25 @@ The OneTwenty project is a Minecraft mod, it gonna add every changes of Minecraf
 | Cherry Sapling        | ✅      |
 | Cherry Button         | ✅      |
 | Cherry Pressure Plate | ✅      |
-| Cherry Sign           | ⚠️     |
-| Cherry Hanging Sign   | ⚠️     |
+
+## Signs and Hanging Signs
+
+| Name                                    | Added? |
+|-----------------------------------------|--------|
+| Signs and Hangings Signs Update (0.4.2) | 🆕     |
+| Cherry Sign                             | ✅      |
+| Bamboo Signs                            | ✅      |
+| Acacia Hanging Sign                     | ⛔      |
+| Bamboo Hanging Sign                     | ⛔      |
+| Birch Hanging Sign                      | ⛔      |
+| Cherry Hanging Sign                     | ⛔      |
+| Crimson Hanging Sign                    | ⛔      |
+| Dark Oak Hanging Sign                   | ⛔      |
+| Jungle Hanging Sign                     | ⛔      |
+| Mangrove Hanging Sign                   | ⛔      |
+| Oak Hanging Sign                        | ⛔      |
+| Spruce Hanging Sign                     | ⛔      |
+| Warped Hanging Sign                     | ⛔      |
 
 
 

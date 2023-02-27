@@ -1,4 +1,4 @@
-package fr.frostbreker.onetwenty.objects.blocks.chiseledbookshelf;
+package fr.frostbreker.onetwenty.objects.blocks.custom.chiseledbookshelf;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

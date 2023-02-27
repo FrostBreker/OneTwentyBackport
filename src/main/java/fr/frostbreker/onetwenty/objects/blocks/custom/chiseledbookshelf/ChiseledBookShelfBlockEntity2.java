@@ -1,4 +1,4 @@
-package fr.frostbreker.onetwenty.objects.blocks.chiseledbookshelf;
+package fr.frostbreker.onetwenty.objects.blocks.custom.chiseledbookshelf;
 
 import com.mojang.logging.LogUtils;
 import fr.frostbreker.onetwenty.objects.blocks.ModBlockEntities;

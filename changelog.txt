@@ -85,3 +85,6 @@ New:
 
     Add Translation for Cherry
     Change Sapling to Natural block in creative tabs
+
+0.4.2 [02/27/23]:
+    Fix Bamboo and Cherry Signs

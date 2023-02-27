@@ -28,7 +28,26 @@ public class ModItems {
    public static final RegistryObject<Item> WILD_ARMOR_TRIM_SMITHING_TEMPLATE = ITEMS.register("wild_armor_trim_smithing_template", () -> new Item(new Item.Properties()));
    public static final RegistryObject<Item> BAMBOO_RAFT = ITEMS.register("bamboo_raft", () -> new BoatItem(false, Boat.Type.BAMBOO, (new Item.Properties()).stacksTo(1)));
    public static final RegistryObject<Item> BAMBOO_CHEST_RAFT = ITEMS.register("bamboo_chest_raft", () -> new BoatItem(true, Boat.Type.BAMBOO, (new Item.Properties()).stacksTo(1)));
-   //public static final RegistryObject<Item> CAMEL_SPAWN_EGG = ITEMS.register("camel_spawn_egg", () -> new SpawnEggItem(ModEntityTypes.CAMEL.get(), 16565097, 13341495, new Item.Properties()));
+
+
+   //Signs and Hanging Signs
+
+   //Signs
+   public static final RegistryObject<Item> CHERRY_SIGN = ITEMS.register("cherry_sign",
+           () -> new SignItem(new Item.Properties().stacksTo(16),
+                   ModBlocks.CHERRY_SIGN.get(), ModBlocks.CHERRY_WALL_SIGN.get()));
+
+   public static final RegistryObject<Item> BAMBOO_SIGN = ITEMS.register("bamboo_sign",
+           () -> new SignItem(new Item.Properties().stacksTo(16),
+                   ModBlocks.BAMBOO_SIGN.get(), ModBlocks.BAMBOO_WALL_SIGN.get()));
+
+   //Hanging Signs
+  /* public static final RegistryObject<Item> CHERRY_HANGING_SIGN = ITEMS.register("cherry_hanging_sign",
+           () -> new HangingSignItem(
+                   ModBlocks.CHERRY_HANGING_SIGN.get(),
+                   ModBlocks.CHERRY_WALL_HANGING_SIGN.get(),
+                   new Item.Properties().stacksTo(16)
+           )); */
 
 
    public static void register(IEventBus eventBus) {

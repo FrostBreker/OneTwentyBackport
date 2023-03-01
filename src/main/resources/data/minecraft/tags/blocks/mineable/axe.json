@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "onetwenty:bamboo_block",
+    "onetwenty:stripped_bamboo_block",
+    "onetwenty:bamboo_planks",
+    "onetwenty:bamboo_slab",
+    "onetwenty:bamboo_stairs",
+    "onetwenty:bamboo_fence",
+    "onetwenty:bamboo_fence_gate",
+    "onetwenty:bamboo_door",
+    "onetwenty:bamboo_trapdoor",
+    "onetwenty:bamboo_pressure_plate",
+    "onetwenty:bamboo_button",
+    "onetwenty:bamboo_sign",
+    "onetwenty:bamboo_mosaic",
+    "onetwenty:bamboo_mosaic_slab",
+    "onetwenty:bamboo_mosaic_stairs"
+  ]
+}

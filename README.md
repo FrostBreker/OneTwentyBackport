@@ -19,22 +19,21 @@ VERSION: 1.18.2
 
 | Name                  | Added? |
 |-----------------------|--------|
-| Bamboo Block          | ⛔      |
-| Stripped Bamboo Block | ⛔      |
-| Bamboo Planks         | ⛔      |
-| Bamboo Stairs         | ⛔      |
-| Bamboo Slabs          | ⛔      |
-| Bamboo Fence          | ⛔      |
-| Bamboo Fence Gate     | ⛔      |
-| Bamboo Trapdoor       | ⛔      |
-| Bamboo Door           | ⛔      |
-| Bamboo Button         | ⛔      |
-| Bamboo pressure plate | ⛔      |
-| Bamboo Mosaic         | ⛔      |
-| Bamboo Mosaic Stairs  | ⛔      |
-| Bamboo Mosaic Slabs   | ⛔      |
+| Bamboo Block          | ✅      |
+| Stripped Bamboo Block | ✅      |
+| Bamboo Planks         | ✅      |
+| Bamboo Stairs         | ✅      |
+| Bamboo Slabs          | ✅      |
+| Bamboo Fence          | ✅      |
+| Bamboo Fence Gate     | ✅      |
+| Bamboo Trapdoor       | ✅      |
+| Bamboo Door           | ✅      |
+| Bamboo Button         | ✅      |
+| Bamboo pressure plate | ✅      |
+| Bamboo Mosaic         | ✅      |
+| Bamboo Mosaic Stairs  | ✅      |
+| Bamboo Mosaic Slabs   | ✅      |
 | Chiseled BookShelf    | ⛔      |
-| Bamboo Sapling        | ⛔      |
 | Piglin Head           | ⛔      |
 | Cherry Log            | ⛔      |
 | Stripped Cherry Log   | ⛔      |
@@ -57,7 +56,7 @@ VERSION: 1.18.2
 | Name                                    | Added? |
 |-----------------------------------------|--------|
 | Cherry Sign                             | ⛔      |
-| Bamboo Signs                            | ⛔      |
+| Bamboo Signs                            | ✅      |
 | Acacia Hanging Sign                     | ⛔      |
 | Bamboo Hanging Sign                     | ⛔      |
 | Birch Hanging Sign                      | ⛔      |

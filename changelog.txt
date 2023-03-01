@@ -1,0 +1,22 @@
+[0.1-1.18.2]
+New
+- Added librarian parchment, change mappings
+
+[0.2-1.18.2]
+New
+- Add Bamboo Block
+- Add Stripped Bamboo Block
+- Add Bamboo Button
+- Add Bamboo Pressure Plate
+- Add Bamboo Door
+- Add Bamboo Fence
+- Add Bamboo Fence Gate
+- Add Bamboo Sign
+- Add Bamboo Slab
+- Add Bamboo Stairs
+- Add Bamboo Trapdoor
+- Add Bamboo Planks
+- Add Bamboo Mosaic
+- Add Bamboo Mosaic Slab
+- Add Bamboo Mosaic Stairs
+- Add Bamboo Wood type

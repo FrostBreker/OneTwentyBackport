@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "wooden_slab",
   "key": {
     "#": {
       "item": "onetwenty:bamboo_planks"
@@ -12,5 +13,6 @@
   "result": {
     "item": "onetwenty:bamboo_slab",
     "count": 6
-  }
+  },
+  "show_notification": true
 }

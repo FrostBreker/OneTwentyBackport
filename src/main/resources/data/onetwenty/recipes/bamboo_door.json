@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "redstone",
+  "group": "wooden_door",
   "key": {
     "#": {
       "item": "onetwenty:bamboo_planks"
@@ -12,6 +13,8 @@
     "##"
   ],
   "result": {
+    "count": 3,
     "item": "onetwenty:bamboo_door"
-  }
+  },
+  "show_notification": true
 }

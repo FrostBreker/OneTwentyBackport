@@ -33,7 +33,7 @@ VERSION: 1.18.2
 | Bamboo Mosaic         | ✅      |
 | Bamboo Mosaic Stairs  | ✅      |
 | Bamboo Mosaic Slabs   | ✅      |
-| Chiseled BookShelf    | ⛔      |
+| Chiseled BookShelf    | ✅      |
 | Piglin Head           | ⛔      |
 | Cherry Log            | ⛔      |
 | Stripped Cherry Log   | ⛔      |

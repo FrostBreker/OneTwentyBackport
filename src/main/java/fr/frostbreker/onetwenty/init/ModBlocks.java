@@ -1,5 +1,6 @@
 package fr.frostbreker.onetwenty.init;
 
+import fr.frostbreker.onetwenty.blocks.custom.ChiseledBookshelfBlock;
 import fr.frostbreker.onetwenty.blocks.custom.ModFlammableRotatedPillarBlock;
 import fr.frostbreker.onetwenty.blocks.custom.ModStandingSignBlock;
 import fr.frostbreker.onetwenty.blocks.custom.ModWallSignBlock;
@@ -207,7 +208,7 @@ public class ModBlocks {
             () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.BAMBOO));
 
     public static final RegistryObject<Block> CHISELED_BOOKSHELF = registerBlock("chiseled_bookshelf",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            () -> new ChiseledBookshelfBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {

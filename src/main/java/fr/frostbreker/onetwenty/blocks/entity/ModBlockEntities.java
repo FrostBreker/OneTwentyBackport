@@ -1,5 +1,6 @@
 package fr.frostbreker.onetwenty.blocks.entity;
 
+import fr.frostbreker.onetwenty.blocks.entity.custom.ChiseledBookshelfBlockEntity;
 import fr.frostbreker.onetwenty.blocks.entity.custom.ModSignBlockEntity;
 import fr.frostbreker.onetwenty.init.ModBlocks;
 import fr.frostbreker.onetwenty.utils.Reference;
@@ -12,6 +13,11 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, Reference.MOD_ID);
+
+    public static final RegistryObject<BlockEntityType<ChiseledBookshelfBlockEntity>> CHISELED_BOOKSHELF =
+            BLOCK_ENTITIES.register("chiseled_bookshelf", () ->
+                    BlockEntityType.Builder.of(ChiseledBookshelfBlockEntity::new,
+                            ModBlocks.CHISELED_BOOKSHELF.get()).build(null));
 
     public static final RegistryObject<BlockEntityType<ModSignBlockEntity>> SIGN_BLOCK_ENTITIES =
             BLOCK_ENTITIES.register("sign_block_entity", () ->

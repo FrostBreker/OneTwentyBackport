@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
   "key": {
     "#": {
       "item": "onetwenty:bamboo_slab"
@@ -11,7 +11,7 @@
     "#"
   ],
   "result": {
-    "item": "onetwenty:bamboo_mosaic",
-    "count": 1
-  }
+    "item": "onetwenty:bamboo_mosaic"
+  },
+  "show_notification": true
 }

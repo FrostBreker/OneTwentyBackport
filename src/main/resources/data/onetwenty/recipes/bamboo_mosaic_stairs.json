@@ -14,5 +14,6 @@
   "result": {
     "item": "onetwenty:bamboo_mosaic_stairs",
     "count": 4
-  }
+  },
+  "show_notification": true
 }

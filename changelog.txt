@@ -20,3 +20,10 @@ New
 - Add Bamboo Mosaic Slab
 - Add Bamboo Mosaic Stairs
 - Add Bamboo Wood type
+
+[0.2.1-1.18.2]
+New
+- Chiseled Bookshelf
+- Add translation for en_us, fr_fr, en_en
+- Fixed Crafting Recipe
+- Fix minecraft tags

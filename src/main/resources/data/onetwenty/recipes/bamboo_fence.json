@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
+  "group": "wooden_custom_fence",
   "key": {
     "#": {
       "item": "onetwenty:bamboo_planks"
@@ -16,5 +17,6 @@
   "result": {
     "item": "onetwenty:bamboo_fence",
     "count": 3
-  }
+  },
+  "show_notification": true
 }

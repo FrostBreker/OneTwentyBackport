@@ -1,13 +1,11 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
       "item": "onetwenty:bamboo_planks"
     }
-  },
-  "pattern": [
-    "#"
   ],
   "result": {
     "item": "onetwenty:bamboo_button"

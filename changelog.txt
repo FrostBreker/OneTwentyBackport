@@ -27,3 +27,8 @@ New
 - Add translation for en_us, fr_fr, en_en
 - Fixed Crafting Recipe
 - Fix minecraft tags
+
+[0.2.2-1.18.2]
+New
+- Fix texture for Bamboo Wall Sign
+- Fix loot_table for Bamboo Wall Sign

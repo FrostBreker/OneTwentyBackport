@@ -8,6 +8,8 @@ import fr.frostbreker.onetwenty.objects.blocks.ModWoodTypes;
 import fr.frostbreker.onetwenty.screen.ModMenuTypes;
 import fr.frostbreker.onetwenty.utils.Reference;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;

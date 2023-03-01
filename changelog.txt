@@ -88,3 +88,8 @@ New:
 
 0.4.2 [02/27/23]:
     Fix Bamboo and Cherry Signs
+
+0.4.3 [03/01/23]:
+ - Add Translucent render for Doors and Trapdoors
+ - Add connected fences.json
+ - Add Logo

@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/door_bottom_right_open",
+  "render_type": "translucent",
   "textures": {
     "bottom": "onetwenty:block/cherry_door_bottom",
     "top": "onetwenty:block/cherry_door_top"

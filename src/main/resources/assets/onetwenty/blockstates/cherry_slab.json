@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "onetwenty:block/cherry_slab"
+    },
+    "type=double": {
+      "model": "onetwenty:block/cherry_planks"
+    },
+    "type=top": {
+      "model": "onetwenty:block/cherry_slab_top"
+    }
+  }
+}

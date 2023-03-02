@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "onetwenty:cherry_log"
+    }
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "item": "onetwenty:cherry_planks",
+    "count": 4
+
+  }
+}

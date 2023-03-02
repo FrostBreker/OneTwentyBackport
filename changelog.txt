@@ -1,0 +1,67 @@
+[0.1-1.19.2]: 03/02/23
+
+## Items
+
+| Name                    | Added? |
+|-------------------------|--------|
+| Trim Smithing Templates | ✅      |
+| Camel Spawn Egg         | ⛔      |
+| Sniffer Spawn Egg       | ⛔      |
+
+## Blocks
+
+| Name                  | Added? |
+|-----------------------|--------|
+| BAMBOO UPDATE (V0.3)  | 🆕     |
+| Bamboo Block          | ✅      |
+| Stripped Bamboo Block | ✅      |
+| Bamboo Planks         | ✅      |
+| Bamboo Stairs         | ✅      |
+| Bamboo Slabs          | ✅      |
+| Bamboo Fence          | ✅      |
+| Bamboo Fence Gate     | ✅      |
+| Bamboo Trapdoor       | ✅      |
+| Bamboo Door           | ✅      |
+| Bamboo Button         | ✅      |
+| Bamboo pressure plate | ✅      |
+| Bamboo Mosaic         | ✅      |
+| Bamboo Mosaic Stairs  | ✅      |
+| Bamboo Mosaic Slabs   | ✅      |
+| Chiseled BookShelf    | ✅      |
+| Bamboo Sapling        | ✅      |
+| Piglin Head           | ⛔      |
+| CHERRY UPDATE (V0.4)  | 🆕     |
+| Cherry Log            | ✅      |
+| Stripped Cherry Log   | ✅      |
+| Cherry Wood           | ✅      |
+| Stripped Cherry Wood  | ✅      |
+| Cherry Planks         | ✅      |
+| Cherry Stairs         | ✅      |
+| Cherry Slabs          | ✅      |
+| Cherry Fence          | ✅      |
+| Cherry Fence Gate     | ✅      |
+| Cherry Trapdoor       | ✅      |
+| Cherry Door           | ✅      |
+| Cherry Leaves         | ✅      |
+| Cherry Sapling        | ✅      |
+| Cherry Button         | ✅      |
+| Cherry Pressure Plate | ✅      |
+
+## Signs and Hanging Signs
+
+| Name                                    | Added? |
+|-----------------------------------------|--------|
+| Signs and Hangings Signs Update (0.4.2) | 🆕     |
+| Cherry Sign                             | ✅      |
+| Bamboo Signs                            | ✅      |
+| Acacia Hanging Sign                     | ⛔      |
+| Bamboo Hanging Sign                     | ⛔      |
+| Birch Hanging Sign                      | ⛔      |
+| Cherry Hanging Sign                     | ⛔      |
+| Crimson Hanging Sign                    | ⛔      |
+| Dark Oak Hanging Sign                   | ⛔      |
+| Jungle Hanging Sign                     | ⛔      |
+| Mangrove Hanging Sign                   | ⛔      |
+| Oak Hanging Sign                        | ⛔      |
+| Spruce Hanging Sign                     | ⛔      |
+| Warped Hanging Sign                     | ⛔      |

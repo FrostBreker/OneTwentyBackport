@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "onetwenty:bamboo_planks"
+    },
+    "E": {
+      "item": "onetwenty:bamboo_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "EEE",
+    "###"
+  ],
+  "result": {
+    "item": "onetwenty:chiseled_bookshelf",
+    "count": 1
+  }
+}

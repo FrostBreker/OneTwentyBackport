@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "onetwenty:block/bamboo_slab"
+    },
+    "type=double": {
+      "model": "onetwenty:block/bamboo_planks"
+    },
+    "type=top": {
+      "model": "onetwenty:block/bamboo_slab_top"
+    }
+  }
+}

@@ -21,6 +21,10 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS).stacksTo(16),
                     ModBlocks.BAMBOO_SIGN.get(), ModBlocks.BAMBOO_WALL_SIGN.get()));
 
+    public static final RegistryObject<Item> CHERRY_SIGN = ITEMS.register("cherry_sign",
+            () -> new SignItem(new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS).stacksTo(16),
+                    ModBlocks.CHERRY_SIGN.get(), ModBlocks.CHERRY_WALL_SIGN.get()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

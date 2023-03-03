@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "onetwenty:block/cherry_pressure_plate"
+    },
+    "powered=true": {
+      "model": "onetwenty:block/cherry_pressure_plate_down"
+    }
+  }
+}

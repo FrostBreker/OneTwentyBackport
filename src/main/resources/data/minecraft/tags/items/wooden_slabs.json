@@ -1,6 +1,6 @@
 {
-  "replace": false,
   "values": [
-    "onetwenty:bamboo_slab"
+    "onetwenty:bamboo_slab",
+    "onetwenty:cherry_slab"
   ]
 }

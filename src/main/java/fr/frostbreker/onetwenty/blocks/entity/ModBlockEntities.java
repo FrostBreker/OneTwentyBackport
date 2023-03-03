@@ -23,7 +23,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("sign_block_entity", () ->
                     BlockEntityType.Builder.of(ModSignBlockEntity::new,
                             ModBlocks.BAMBOO_WALL_SIGN.get(),
-                            ModBlocks.BAMBOO_SIGN.get()).build(null));
+                            ModBlocks.BAMBOO_SIGN.get(),
+                            ModBlocks.CHERRY_WALL_SIGN.get(),
+                            ModBlocks.CHERRY_SIGN.get()
+                    ).build(null));
 
 
     public static void register(IEventBus eventBus) {

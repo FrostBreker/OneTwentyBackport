@@ -6,6 +6,7 @@ import fr.frostbreker.onetwenty.blocks.custom.ModStandingSignBlock;
 import fr.frostbreker.onetwenty.blocks.custom.ModWallSignBlock;
 import fr.frostbreker.onetwenty.blocks.entity.ModWoodTypes;
 import fr.frostbreker.onetwenty.utils.Reference;
+import fr.frostbreker.onetwenty.world.feature.tree.CherryTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
@@ -209,6 +210,50 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CHISELED_BOOKSHELF = registerBlock("chiseled_bookshelf",
             () -> new ChiseledBookshelfBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+
+    public static final RegistryObject<Block> CHERRY_LOG = registerBlock("cherry_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> CHERRY_WOOD = registerBlock("cherry_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> STRIPPED_CHERRY_LOG = registerBlock("stripped_cherry_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> STRIPPED_CHERRY_WOOD = registerBlock("stripped_cherry_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> CHERRY_PLANKS = registerBlock("cherry_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> CHERRY_STAIRS = registerBlock("cherry_stairs",
+            () -> new StairBlock(() -> ModBlocks.CHERRY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> CHERRY_SLAB = registerBlock("cherry_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> CHERRY_FENCE = registerBlock("cherry_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> CHERRY_FENCE_GATE = registerBlock("cherry_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> CHERRY_LEAVES = registerBlock("cherry_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)), CreativeModeTab.TAB_DECORATIONS);
+
+    public static final RegistryObject<Block> CHERRY_SAPLING = registerBlock("cherry_sapling",
+            () -> new SaplingBlock(new CherryTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), CreativeModeTab.TAB_DECORATIONS);
+
+    public static final RegistryObject<Block> POTTED_CHERRY_SAPLING = registerBlockWithoutBlockItem("potted_cherry_sapling",
+            () -> new FlowerPotBlock(null, ModBlocks.CHERRY_SAPLING,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
+
+    public static final RegistryObject<Block> CHERRY_DOOR = registerBlock("cherry_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> CHERRY_TRAPDOOR = registerBlock("cherry_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> CHERRY_BUTTON = registerBlock("cherry_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> CHERRY_PRESSURE_PLATE = registerBlock("cherry_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), CreativeModeTab.TAB_REDSTONE);
+
+    public static final RegistryObject<Block> CHERRY_WALL_SIGN = registerBlockWithoutBlockItem("cherry_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CHERRY));
+
+    public static final RegistryObject<Block> CHERRY_SIGN = registerBlockWithoutBlockItem("cherry_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CHERRY));
 
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {

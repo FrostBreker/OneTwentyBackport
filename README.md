@@ -35,27 +35,27 @@ VERSION: 1.18.2
 | Bamboo Mosaic Slabs   | ✅      |
 | Chiseled BookShelf    | ✅      |
 | Piglin Head           | ⛔      |
-| Cherry Log            | ⛔      |
-| Stripped Cherry Log   | ⛔      |
-| Cherry Wood           | ⛔      |
-| Stripped Cherry Wood  | ⛔      |
-| Cherry Planks         | ⛔      |
-| Cherry Stairs         | ⛔      |
-| Cherry Slabs          | ⛔      |
-| Cherry Fence          | ⛔      |
-| Cherry Fence Gate     | ⛔      |
-| Cherry Trapdoor       | ⛔      |
-| Cherry Door           | ⛔      |
-| Cherry Leaves         | ⛔      |
-| Cherry Sapling        | ⛔      |
-| Cherry Button         | ⛔      |
-| Cherry Pressure Plate | ⛔      |
+| Cherry Log            | ✅      |
+| Stripped Cherry Log   | ✅      |
+| Cherry Wood           | ✅      |
+| Stripped Cherry Wood  | ✅      |
+| Cherry Planks         | ✅      |
+| Cherry Stairs         | ✅      |
+| Cherry Slabs          | ✅      |
+| Cherry Fence          | ✅      |
+| Cherry Fence Gate     | ✅      |
+| Cherry Trapdoor       | ✅      |
+| Cherry Door           | ✅      |
+| Cherry Leaves         | ✅      |
+| Cherry Sapling        | ✅      |
+| Cherry Button         | ✅      |
+| Cherry Pressure Plate | ✅      |
 
 ## Signs and Hanging Signs
 
 | Name                                    | Added? |
 |-----------------------------------------|--------|
-| Cherry Sign                             | ⛔      |
+| Cherry Sign                             | ✅      |
 | Bamboo Signs                            | ✅      |
 | Acacia Hanging Sign                     | ⛔      |
 | Bamboo Hanging Sign                     | ⛔      |

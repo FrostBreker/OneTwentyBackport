@@ -32,3 +32,26 @@ New
 New
 - Fix texture for Bamboo Wall Sign
 - Fix loot_table for Bamboo Wall Sign
+
+[0.3-1.18.2]
+New
+- Add Cherry log
+- Add Stripped Cherry log
+- Add Cherry wood
+- Add Stripped Cherry wood
+- Add Cherry planks
+- Add Cherry slab
+- Add Cherry stairs
+- Add Cherry fence
+- Add Cherry fence gate
+- Add Cherry door
+- Add Cherry button
+- Add Cherry pressure plate
+- Add Cherry trapdoor
+- Add Cherry sign
+- Add Cherry wall sign
+- Add Cherry Potted
+- Add Cherry Leaves
+- Add Cherry Sapling
+
+

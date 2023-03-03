@@ -43,9 +43,12 @@ public class OneTwentyMod {
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BAMBOO_DOOR.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BAMBOO_TRAPDOOR.get(), RenderType.translucent());
-       // ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_LEAVES.get(), RenderType.cutout());
-       // ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_SAPLING.get(), RenderType.cutout());
-       // ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_CHERRY_SAPLING.get(), RenderType.cutout());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_DOOR.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_TRAPDOOR.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_CHERRY_SAPLING.get(), RenderType.cutout());
 
         WoodType.register(ModWoodTypes.BAMBOO);
         WoodType.register(ModWoodTypes.CHERRY);
@@ -54,7 +57,7 @@ public class OneTwentyMod {
 
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            //((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHERRY_SAPLING.getId(), ModBlocks.POTTED_CHERYY_SAPLIING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHERRY_SAPLING.getId(), ModBlocks.POTTED_CHERRY_SAPLING);
 
             Sheets.addWoodType(ModWoodTypes.BAMBOO);
             Sheets.addWoodType(ModWoodTypes.CHERRY);

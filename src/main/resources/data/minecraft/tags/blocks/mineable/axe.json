@@ -15,7 +15,6 @@
     "onetwenty:bamboo_wall_sign",
     "onetwenty:bamboo_button",
     "onetwenty:bamboo_pressure_plate",
-    "onetwenty:bamboo_hanging_sign",
     "onetwenty:bamboo_mosaic",
     "onetwenty:bamboo_mosaic_slab",
     "onetwenty:bamboo_mosaic_stairs",
@@ -32,8 +31,6 @@
     "onetwenty:cherry_trapdoor",
     "onetwenty:cherry_button",
     "onetwenty:cherry_pressure_plate",
-    "onetwenty:cherry_sign",
-    "onetwenty:cherry_wall_sign",
-    "onetwenty:cherry_hanging_sign"
+    "onetwenty:cherry_sign"
   ]
 }

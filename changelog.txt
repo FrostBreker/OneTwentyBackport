@@ -65,3 +65,7 @@
 | Oak Hanging Sign                        | ⛔      |
 | Spruce Hanging Sign                     | ⛔      |
 | Warped Hanging Sign                     | ⛔      |
+
+[0.1.1-1.19.2]: 03/26/23
+- Fix an issue for mining block in #4
+- Fix Cherry Sapling render to cutout

@@ -425,15 +425,15 @@ public class ModBlocks {
 
     //Hanging Signs
 
-   /* public static final RegistryObject<Block> CHERRY_HANGING_SIGN = registerBlockWithoutBlockItem("cherry_hanging_sign",
-            () -> new ModCeilingHangingSignBlock(BlockBehaviour.Properties.of(Material.WOOD,
+  /*  public static final RegistryObject<Block> CHERRY_HANGING_SIGN = registerBlockWithoutBlockItem("cherry_hanging_sign",
+            () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.of(Material.WOOD,
                             CHERRY_LOG.get().defaultMaterialColor())
                     .noCollission()
                     .strength(1.0F)
                     .sound(SoundType.HANGING_SIGN), ModWoodTypes.CHERRY));
 
     public static final RegistryObject<Block> CHERRY_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("cherry_wall_hanging_sign",
-            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.of(
+            () -> new WallHangingSignBlock(BlockBehaviour.Properties.of(
                     Material.WOOD,
                     CHERRY_LOG.get().defaultMaterialColor())
                     .noCollission()

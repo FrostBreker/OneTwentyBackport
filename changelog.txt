@@ -93,3 +93,7 @@ New:
  - Add Translucent render for Doors and Trapdoors
  - Add connected fences.json
  - Add Logo
+
+0.4.4 [03/26/23]:
+ - Fix Lang file for Raft and Chest Boat
+ - Fix render_type of Cherry Sapling in #4

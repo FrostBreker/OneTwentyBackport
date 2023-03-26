@@ -27,7 +27,7 @@ public class ModBlockEntities {
                             ModBlocks.BAMBOO_SIGN.get()
                     ).build(null));
 
-   /* public static final RegistryObject<BlockEntityType<ModHangingSignBlockEntity>> HANGING_SIGN_BLOCK_ENTITIES =
+  /*  public static final RegistryObject<BlockEntityType<ModHangingSignBlockEntity>> HANGING_SIGN_BLOCK_ENTITIES =
             BLOCK_ENTITIES.register("hanging_sign_block_entity", () ->
                     BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
                             ModBlocks.CHERRY_HANGING_SIGN.get(),
